@@ -38,11 +38,19 @@ h4{
 h1{
     font-size: 2.4rem;
 }
+h2 {
+    font-size: 2.2rem;
+}
+h3 {
+    font-size: 2rem;
+}
 
-p{
+
+p {
     line-height: 2rem;
     font-size: 1.2rem;
     font-weight: 300;
+    margin: 1rem 0;
 }
 
 /* Header */
@@ -83,6 +91,25 @@ p{
     align-items: center;
 }
 
+/* A la venta */
+.venta{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1rem;
+}
+
+.venta img{
+    width: 100%;
+}
+
+.destacado{
+    display: grid;
+    grid-gap: 1rem;
+    grid-column: 1 / 3;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 @media (min-width:992px) {
     .header .barra {
         grid-template-columns: 30% 1fr 30%;
@@ -103,4 +130,11 @@ p{
         text-align: left;
     }
 
+}
+
+@media (min-width:768px) {
+    .venta{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto );
+    }
 }
