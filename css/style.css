@@ -53,6 +53,24 @@ p {
     margin: 1rem 0;
 }
 
+.boton{
+    background-color: var(--primario);
+    display: block;
+    padding: var(--padding);
+    text-align: center;
+    color: var(--blanco);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid var(--primario);
+    transition: all .5s ease-in-out;
+}
+
+.boton:hover{
+    background-color: var(--blanco);
+    color: var(--primario);
+    border: 1px solid var(--primario);
+}
+
 /* Header */
 
 .header{
@@ -105,7 +123,6 @@ p {
 
 .destacado{
     display: grid;
-    grid-gap: 1rem;
     grid-column: 1 / 3;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -137,4 +154,28 @@ p {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto );
     }
+}
+
+.card{
+    background-color: var(--blanco);
+    padding: var(--padding);
+    border: 1px solid rgb(196, 195, 195);
+}
+
+.card p{
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+.anuncio{
+    display: grid;
+}
+
+.anuncio .precio{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.anuncio span{
+    font-weight: 300;
+    color: var(--primario);
 }
